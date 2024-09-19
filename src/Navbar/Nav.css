@@ -1,0 +1,23 @@
+/* Custom scrollbar styling */
+.scrollbar-custom::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .scrollbar-custom::-webkit-scrollbar-track {
+    background: #2d2d2d;
+    height: max-content;
+  }
+  
+  .scrollbar-custom::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 10px;
+    transition: background 0.3s ease; 
+  }
+  
+  .scrollbar-custom::-webkit-scrollbar-thumb:hover {
+    background: rgb(123, 118, 118);
+  }
+
+  .burger-menu{
+    fill: black;
+  }

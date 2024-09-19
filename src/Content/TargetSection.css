@@ -1,0 +1,13 @@
+/* .glow1{
+    animation: para 1s infinite alternate;
+  }
+  
+  @keyframes para {
+    0% {
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    }
+    100% {
+      text-shadow: 0 0 20px rgba(255, 255, 255, 1),
+        0 0 30px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 0.6);
+    }
+  } */
