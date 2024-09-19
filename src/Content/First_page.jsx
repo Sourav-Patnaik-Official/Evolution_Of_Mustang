@@ -22,6 +22,7 @@ function First_page() {
     if (sectionRefs.current[index]) {
       sectionRefs.current[index].scrollIntoView({
         behavior: "smooth", // Smooth scrolling
+        block: "start", // Align the top of the element with the top of the scrollable ancestor
       });
     }
   };
@@ -32,21 +33,20 @@ function First_page() {
       <AudioPlayer onStart={handleAudioStart} />
 
       {/* Map over the sections and add refs for programmatic scrolling */}
-      {hasStarted &&
-        sectionsData.map((section, index) => (
-          <div
-            key={index}
-            id={section.id} // For CSS-based smooth scrolling with anchor links
-            ref={(el) => (sectionRefs.current[index] = el)} // For scrollIntoView
-          >
-            <TargetSection
-              backgroundUrl={section.backgroundUrl}
-              headingText={section.headingText}
-              paragraphText={section.paragraphText}
-              textColor={section.textColor}
-            />
-          </div>
-        ))}
+      {sectionsData.map((section, index) => (
+        <div
+          key={section.id} // Ensure unique key, usually use section.id
+          id={section.id} // For CSS-based smooth scrolling with anchor links
+          ref={(el) => (sectionRefs.current[index] = el)} // For scrollIntoView
+        >
+          <TargetSection
+            backgroundUrl={section.backgroundUrl}
+            headingText={section.headingText}
+            paragraphText={section.paragraphText}
+            textColor={section.textColor}
+          />
+        </div>
+      ))}
       <Footer />
     </div>
   );

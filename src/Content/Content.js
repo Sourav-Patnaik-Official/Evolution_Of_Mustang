@@ -1,6 +1,16 @@
 // data.js
 const sectionsData = [
   {
+    id: "section0",
+    backgroundUrl:
+      "https://s1.cdn.autoevolution.com/images/gallery/FORD-Mustang-Shelby-GT500-6483_17.jpg",
+    headingText: "INTRODUCTION",
+    paragraphText:
+      "The Ford Mustang is a series of American automobiles manufactured by Ford. In continuous production since 1964, the Mustang is currently the longest-produced Ford car nameplate. Currently in its seventh generation, it is the fifth-best selling Ford car nameplate. The namesake of the pony car automobile segment, the Mustang was developed as a highly styled line of sporty coupes and convertibles derived from existing model lines, initially distinguished by long hood, short deck proportions.",
+
+    textColor: "text-white",
+  },
+  {
     id: "section1",
     backgroundUrl:
       "https://s1.cdn.autoevolution.com/images/gallery/FORD-Mustang-2495_3.jpeg",
@@ -243,10 +253,6 @@ const sectionsData = [
       "Ford unveiled at the Monterey Car Week in 2023 the wildest version ever for a Mustang: the GTD. With this version, the American automaker proved that it could build race-ready cars developed for tracks and adapted for the roads. The GTD was based not on the regular Mustang but on the GT3 race car that was unveiled in 2023 at Le Mans, and the three letters are carried over from the IMSA GTD racing class, which respects the FIA's GT3 standards.",
     textColor: "text-white", // Tailwind text color class
   },
-
-
-
-
 ];
 
 export default sectionsData;

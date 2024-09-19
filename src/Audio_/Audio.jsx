@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState } from "react";
 import audio from "../Audio/car_audio.mp3";
 import video from "../Video/mustang_background.mp4";
 import "./home.css";
@@ -26,13 +26,7 @@ const AudioPlayer = ({ onStart }) => {
   const handleStartExperience = () => {
     handlePlay();
     if (onStart) onStart(); // Notify parent that experience has started
-    document.body.classList.remove("no-scroll"); // Allow scrolling
   };
-
-  useEffect(() => {
-    // Add no-scroll class initially
-    document.body.classList.add("no-scroll");
-  }, []);
 
   return (
     <div className="home relative">
@@ -57,7 +51,7 @@ const AudioPlayer = ({ onStart }) => {
 
           <button
             onClick={handleStartExperience}
-            className="playbutton bg-transparent border border-yellow-400  text-white font-bold py-2 -mt-2 px-4 rounded hover:bg-yellow-400  hover:text-stone-950 transition duration-300 z-30"
+            className="playbutton bg-transparent border border-yellow-400 text-white font-bold py-2 -mt-2 px-4 rounded hover:bg-yellow-400 hover:text-stone-950 transition duration-300 z-30"
           >
             Let The Experience Begin!
           </button>
