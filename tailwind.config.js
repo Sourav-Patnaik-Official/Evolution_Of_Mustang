@@ -6,6 +6,9 @@ module.exports = {
       backdropBlur: {
         lg: "10px", // Customize the blur amount here
       },
+      screens: {
+        '1md': '992px',
+      },
     },
   },
   variants: {
